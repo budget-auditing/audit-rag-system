@@ -1,0 +1,12 @@
+# Core runtime dependencies for the TRACE pipeline.
+# Install with:  pip install -r requirements.txt
+#
+# For preference-learning training, also install the extras declared in
+# pyproject.toml:  pip install -e '.[train]'
+# For a local BGE embedding server:          pip install -e '.[embed-server]'
+# For corpus construction from raw documents: pip install -e '.[data-build]'
+# For the HTTP service (service.py):          pip install -e '.[service]'
+
+numpy>=1.24
+faiss-cpu>=1.7.4
+tqdm>=4.66

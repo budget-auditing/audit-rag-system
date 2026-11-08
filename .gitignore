@@ -1,0 +1,86 @@
+# ===== Root-level ignores for audit-rag monorepo =====
+
+# Python
+__pycache__/
+*.py[cod]
+*\$py.class
+*.so
+.Python
+
+# Virtual environments (all three)
+.venv/
+venv/
+ENV/
+env/
+backend/.venv/
+C3RAG/.venv/
+TRACE/.venv/
+
+# Node / frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# pnpm store
+.pnpm-store/
+
+# Data & artifacts (shared volume + service outputs)
+data/*
+!data/.gitkeep
+!**/data/.gitkeep
+*.faiss
+*.index
+*.db
+*.sqlite
+*.sqlite3
+
+# Models & checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+models/
+checkpoints/
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+runs/
+lightning_logs/
+wandb/
+
+# Test & cache
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+.cache/
+*.cache
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# OS
+.DS_Store
+
+# Uploads & artifacts
+backend/uploads/

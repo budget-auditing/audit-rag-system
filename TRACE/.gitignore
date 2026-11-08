@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Editor / OS
+.vscode/
+.cursor/
+.claude/
+.idea/
+.DS_Store
+
+# Python distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+.envrc
+
+# Test / lint caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs, runtime artifacts, and large binaries
+*.log
+*.pid
+*.run.log
+*.tar.gz
+
+# Local experiment outputs and datasets (not redistributed)
+runs/
+data/
+data-stage1/
+data_gen/
+datasets/
+corpus/
+FinQA/
+baselines/
+txt_qa/
+
+# Only the synthetic demo dataset is tracked.
+datasets-public/*
+!datasets-public/audit-ociqa-demo/
+datasets-public/**/*.tmp
